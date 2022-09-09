@@ -1,3 +1,14 @@
+:root {
+  --gradient: linear-gradient(90deg,
+  #39FF14,
+  #88FF0C,
+  #B0FF08,
+  #D7FF04,
+  #FFFF00);
+
+}
+
+/*  */
 body {
     color: white;
     background-color: black;
@@ -35,7 +46,11 @@ body {
     width: 100vw;
     height: 100vh;
   }
-  
+  /*  */
+  @keyframes bg-animation {
+    0% {background-position: left;}
+    100% {background-position: right;}
+  }
   .title {
     margin: auto;
     font-family: "Permanent Marker", monospace;
@@ -48,12 +63,21 @@ body {
     line-height: 0.75;
     word-break: break-word;
     max-width: 500px;
+
+
+
+
   }
   
   .title h1 {
-    background: -webkit-linear-gradient(rgb(18, 255, 22) 30%, rgb(255, 215, 38));
+     /* background: -webkit-linear-gradient(rgb(18, 255, 22) 30%, rgb(255, 215, 38)); */
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; 
+
+    background-image: var(--gradient); 
+    -webkit-background-clip: text;
+    background-size: 400%;
+    animation: bg-animation .25s infinite alternate;
   }
   
   .title-top {
