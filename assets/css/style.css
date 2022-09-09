@@ -104,6 +104,13 @@ body {
     text-shadow: 0 2px 0 rgb(107, 77, 11), 2px 0 0 rgb(151, 109, 19),
       2px 2px 0 rgb(151, 109, 19);
   }
+
+  .green-with-darkgreen {
+    color: rgb(44, 226, 24);
+    text-shadow: 0 2px 0 rgb(107, 77, 11), 2px 0 0 rgb(151, 109, 19),
+      2px 2px 0 rgb(151, 109, 19);
+  }
+  
   
   .yellow {
     color: rgb(226, 179, 24);
