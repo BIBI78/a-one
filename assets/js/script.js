@@ -12,12 +12,15 @@
 
      function removeSpinClass() {
          snake.classList.remove('spinImg');
-         snake1.classList.remove('spinImg');
-         snake2.classList.remove('spinImg');
+        //  these are for the future die
+        //  snake1.classList.remove('spinImg');
+        //  snake2.classList.remove('spinImg');
       
          
      }
-     snake.addEventListener('animationend', removeSpinClass)
+
+    snake.addEventListener('animationend', removeSpinClass);
+     
      
      function rollDie(){
         const firstNumber = Math.floor(Math.random()*6) + 1;
@@ -37,7 +40,7 @@
         console.log(firstNumber);
         console.log(secondNumber);
         console.log(thirdNumber);
-        console.log("slatt");
+        console.log("first roll");
         
       }
     
@@ -61,9 +64,44 @@
         console.log(fourthNumber);
         console.log(fifthNumber);
         console.log(sixthNumber);
-        console.log("blatt");
+        console.log("second roll");
     
     
+      }
+
+      
+      function compareRolls (){
+        const firstNumber = Math.floor(Math.random()*6) + 1;
+        const secondNumber = Math.floor(Math.random()*6) + 1;
+        const thirdNumber = Math.floor(Math.random()*6) + 1;
+
+        console.log(firstNumber);
+        console.log(secondNumber);
+        console.log(thirdNumber);
+        console.log("first roll");
+
+        const fourthNumber = Math.floor(Math.random()*6) + 1;
+        const fifthNumber = Math.floor(Math.random()*6) + 1;
+        const sixthNumber = Math.floor(Math.random()*6) + 1;
+
+        console.log(fourthNumber);
+        console.log(fifthNumber);
+        console.log(sixthNumber);
+        console.log("second roll");
+       
+
+        if (firstNumber === fourthNumber) {
+          console.log("lets see the second numbers")
+        
+        } else if(secondNumber === fifthNumber){
+           console.log("lets see thrid roll")
+        } else if (thirdNumber === sixthNumber){
+          console.log("roll again")
+        } else {
+          console.log("nothing is equal")
+        }
+
+
       }
     
       function rollBoth(){
