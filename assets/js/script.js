@@ -183,6 +183,13 @@
             (myRollOne[1] === 1 || myRollOne[1] === 2 || myRollOne[1] === 3 )&& (myRollOne[1] !== myRollOne[2]) &&
             (myRollOne[2] === 1 || myRollOne[2] === 2 || myRollOne[2] === 3) && (myRollOne[2] !== myRollOne[0])){
               console.log("automatic lose")
+              
+            } else if  ((myRollOne[0] === 4 || myRollOne[0] === 5 || myRollOne[0] === 6) && (myRollOne[0] !== myRollOne[1]) && 
+            (myRollOne[1] === 4 || myRollOne[1] === 5 || myRollOne[1] === 6 )&& (myRollOne[1] !== myRollOne[2]) &&
+            (myRollOne[2] === 4 || myRollOne[2] === 5 || myRollOne[2] === 6) && (myRollOne[2] !== myRollOne[0])){
+              console.log("automatic win")
+            // LET ME DO THE OPPOSITE 
+
 
              
 
