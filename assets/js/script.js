@@ -265,7 +265,7 @@ document.getElementsByTagName('img')[2].setAttribute("src",thirdDie);
           
 
           const myRollOne = [firstNumber,secondNumber,thirdNumber];
-          console.log(myRollOne);
+          console.log("first roll = "+ myRollOne);
         
 
       
@@ -293,8 +293,65 @@ console.log("automatic lose "+rollOneValue);
 const rollOneValue = myRollOne[0];
 console.log("all the same "+ rollOneValue +"s");
 
+// need more conditions here  XXY condidtion 551 ,332 etc
 
-// second roll starts here 
+
+// // second roll starts here 
+// // same code 
+
+// const fourthNumber = Math.floor(Math.random()*6) + 1;
+// const fifthNumber = Math.floor(Math.random()*6) + 1;
+// const sixthNumber = Math.floor(Math.random()*6) + 1;
+
+// const fourthDie =  "assets/images/d" + fourthNumber + ".png";
+// const fifthDie =  "assets/images/d" + fifthNumber + ".png";
+// const sixthDie =  "assets/images/d" + sixthNumber + ".png";
+
+// document.getElementsByTagName('img')[3].setAttribute("src",fourthDie); 
+// document.getElementsByTagName('img')[4].setAttribute("src",fifthDie); 
+// document.getElementsByTagName('img')[5].setAttribute("src",sixthDie); 
+
+// // why isnt this happenening ?
+// const myRollTwo = [fourthNumber,fifthNumber,sixthNumber];
+// console.log("second roll"+ myRollTwo);
+
+// if ((myRollTwo[0] === 1 || myRollTwo[0] === 2 || myRollTwo[0] === 3) && (myRollTwo[0] !== myRollTwo[1]) && 
+// (myRollTwo[1] === 1 || myRollTwo[1] === 2 || myRollTwo[1] === 3 )&& (myRollTwo[1] !== myRollTwo[2]) &&
+// (myRollTwo[2] === 1 || myRollTwo[2] === 2 || myRollTwo[2] === 3) && (myRollTwo[2] !== myRollTwo[0])){
+//   // console.log("automatic lose")
+//   const rollTwoValue = myRollTwo;
+// console.log("automatic lose"+rollTwoValue);
+
+
+// // SSTOP
+
+
+//               } else if ((myRollTwo[0] === 4 || myRollTwo[0] === 5 || myRollTwo[0] === 6) && (myRollTwo[0] !== myRollTwo[1]) && 
+// (myRollTwo[1] === 4 || myRollTwo[1] === 5 || myRollTwo[1] === 6 )&& (myRollTwo[1] !== myRollTwo[2]) &&
+// (myRollTwo[2] === 4 || myRollTwo[2] === 5 || myRollTwo[2] === 6) && (myRollTwo[2] !== myRollTwo[0])){
+//   console.log("automatic win")
+
+//               } else if (myRollTwo[0] === myRollTwo[1] && myRollTwo[1] === myRollTwo[2]){
+// // console.log(" all the same")
+// const rollTwoValue = myRollTwo[0];
+// console.log("all the same "+ rollTwoValue +"s");
+
+
+
+
+
+
+
+
+}
+
+
+}
+     
+
+
+function player2Roll(){
+
 
 const fourthNumber = Math.floor(Math.random()*6) + 1;
 const fifthNumber = Math.floor(Math.random()*6) + 1;
@@ -308,16 +365,16 @@ document.getElementsByTagName('img')[3].setAttribute("src",fourthDie);
 document.getElementsByTagName('img')[4].setAttribute("src",fifthDie); 
 document.getElementsByTagName('img')[5].setAttribute("src",sixthDie); 
 
-
+// why isnt this happenening ?
 const myRollTwo = [fourthNumber,fifthNumber,sixthNumber];
-console.log(myRollTwo);
+console.log("second roll = "+ myRollTwo);
 
 if ((myRollTwo[0] === 1 || myRollTwo[0] === 2 || myRollTwo[0] === 3) && (myRollTwo[0] !== myRollTwo[1]) && 
 (myRollTwo[1] === 1 || myRollTwo[1] === 2 || myRollTwo[1] === 3 )&& (myRollTwo[1] !== myRollTwo[2]) &&
 (myRollTwo[2] === 1 || myRollTwo[2] === 2 || myRollTwo[2] === 3) && (myRollTwo[2] !== myRollTwo[0])){
   // console.log("automatic lose")
   const rollTwoValue = myRollTwo;
-console.log("automatic lose"+rollTwoValue);
+console.log("automatic lose = "+rollTwoValue);
 
 
 // SSTOP
@@ -326,7 +383,7 @@ console.log("automatic lose"+rollTwoValue);
               } else if ((myRollTwo[0] === 4 || myRollTwo[0] === 5 || myRollTwo[0] === 6) && (myRollTwo[0] !== myRollTwo[1]) && 
 (myRollTwo[1] === 4 || myRollTwo[1] === 5 || myRollTwo[1] === 6 )&& (myRollTwo[1] !== myRollTwo[2]) &&
 (myRollTwo[2] === 4 || myRollTwo[2] === 5 || myRollTwo[2] === 6) && (myRollTwo[2] !== myRollTwo[0])){
-  console.log("automatic win")
+  console.log("automatic win" + rollTwoValue)
 
               } else if (myRollTwo[0] === myRollTwo[1] && myRollTwo[1] === myRollTwo[2]){
 // console.log(" all the same")
@@ -341,8 +398,4 @@ console.log("all the same "+ rollTwoValue +"s");
 }
 
 }
-
-
-}
-     
    
