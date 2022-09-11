@@ -70,39 +70,7 @@
       }
 
       
-      function compareRolls (){
-        const firstNumber = Math.floor(Math.random()*6) + 1;
-        const secondNumber = Math.floor(Math.random()*6) + 1;
-        const thirdNumber = Math.floor(Math.random()*6) + 1;
-
-        console.log(firstNumber);
-        console.log(secondNumber);
-        console.log(thirdNumber);
-        console.log("first roll");
-
-        const fourthNumber = Math.floor(Math.random()*6) + 1;
-        const fifthNumber = Math.floor(Math.random()*6) + 1;
-        const sixthNumber = Math.floor(Math.random()*6) + 1;
-
-        console.log(fourthNumber);
-        console.log(fifthNumber);
-        console.log(sixthNumber);
-        console.log("second roll");
-       
-
-        if (firstNumber === fourthNumber) {
-          console.log("lets see the second numbers")
-        
-        } else if(secondNumber === fifthNumber){
-           console.log("lets see thrid roll")
-        } else if (thirdNumber === sixthNumber){
-          console.log("roll again")
-        } else {
-          console.log("nothing is equal")
-        }
-
-
-      }
+      
     
       function rollBoth(){
         const firstNumber = Math.floor(Math.random()*6) + 1;
@@ -142,6 +110,91 @@
           var audio = new Audio('https://www.fesliyanstudios.com/play-mp3/387');
           audio.play();
         }
+//  new js code for compare rolls 
+
+
+
+        function compareRolls (){
+          const firstNumber = Math.floor(Math.random()*6) + 1;
+          const secondNumber = Math.floor(Math.random()*6) + 1;
+          const thirdNumber = Math.floor(Math.random()*6) + 1;
+  
+          // console.log(firstNumber);
+          // console.log(secondNumber);
+          // console.log(thirdNumber);
+          // console.log("first roll");
+  
+          const fourthNumber = Math.floor(Math.random()*6) + 1;
+          const fifthNumber = Math.floor(Math.random()*6) + 1;
+          const sixthNumber = Math.floor(Math.random()*6) + 1;
+  
+          // console.log(fourthNumber);
+          // console.log(fifthNumber);
+          // console.log(sixthNumber);
+          // console.log("second roll");
+
+          const myRollOne = [firstNumber,secondNumber,thirdNumber];
+          console.log(myRollOne);
+
+          const myRollTwo = [fourthNumber,fifthNumber,sixthNumber];
+          console.log(myRollTwo);
+
+
+          // should these be two seperate functions ??
+         
+  
+          if (firstNumber === fourthNumber) {
+            console.log("lets see the second numbers")
+          
+          } else if(secondNumber === fifthNumber){
+             console.log("lets see thrid roll")
+          } else if (thirdNumber === sixthNumber){
+            console.log("roll again")
+          } else {
+            console.log("nothing is equal")
+          }
+  
+  
+        }
+
+
+        function compare2(){
+          const firstNumber = Math.floor(Math.random()*6) + 1;
+          const secondNumber = Math.floor(Math.random()*6) + 1;
+          const thirdNumber = Math.floor(Math.random()*6) + 1;
+          const fourthNumber = Math.floor(Math.random()*6) + 1;
+          const fifthNumber = Math.floor(Math.random()*6) + 1;
+          const sixthNumber = Math.floor(Math.random()*6) + 1;
+
+          const myRollOne = [firstNumber,secondNumber,thirdNumber];
+          console.log(myRollOne);
+
+          const myRollTwo = [fourthNumber,fifthNumber,sixthNumber];
+          console.log(myRollTwo);
+
+// LET ME SET CONDITONS FIRST
+          if (myRollOne[0] === myRollTwo[1]=== myRollOne[2]){
+            console.log(" all the same")
+          } else if (myRollOne[0] === 1 || myRollOne[0] === 2 || myRollOne[0] === 3){
+            
+                   if ( myRollOne[1] === 1 || myRollOne[1] === 2 || myRollOne[1] === 3){
+
+                   
+                    if (myRollOne[2] === 1 || myRollOne[2] === 2 || myRollOne[2] === 3) {
+              console.log("automatic lose")
+                    }
+                  }
+
+          }
+          
+
+        
+
+      }
+
+
+
+
     
      
    
