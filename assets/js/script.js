@@ -168,22 +168,33 @@
 
           const myRollOne = [firstNumber,secondNumber,thirdNumber];
           console.log(myRollOne);
+          console.log(firstNumber);
+          console.log(secondNumber);
+          console.log(thirdNumber);
 
           const myRollTwo = [fourthNumber,fifthNumber,sixthNumber];
-          console.log(myRollTwo);
+          // console.log(myRollTwo);
 
 // LET ME SET CONDITONS FIRST
-          if (myRollOne[0] === myRollTwo[1]=== myRollOne[2]){
+          if (myRollOne[0] === myRollOne[1] && myRollOne[1] === myRollOne[2]){
             console.log(" all the same")
-          } else if (myRollOne[0] === 1 || myRollOne[0] === 2 || myRollOne[0] === 3){
+
+          }else if ((myRollOne[0] === 1 || myRollOne[0] === 2 || myRollOne[0] === 3) && (myRollOne[0] !== myRollOne[1]) && 
+            (myRollOne[1] === 1 || myRollOne[1] === 2 || myRollOne[1] === 3 )&& (myRollOne[1] !== myRollOne[2]) &&
+            (myRollOne[2] === 1 || myRollOne[2] === 2 || myRollOne[2] === 3) && (myRollOne[2] !== myRollOne[0])){
+              console.log("automatic lose")
+
+             
+
+          // } else if (myRollOne[0] === 1 || myRollOne[0] === 2 || myRollOne[0] === 3){
             
-                   if ( myRollOne[1] === 1 || myRollOne[1] === 2 || myRollOne[1] === 3){
+          //          if ( myRollOne[1] === 1 || myRollOne[1] === 2 || myRollOne[1] === 3){
 
                    
-                    if (myRollOne[2] === 1 || myRollOne[2] === 2 || myRollOne[2] === 3) {
-              console.log("automatic lose")
-                    }
-                  }
+          //           if (myRollOne[2] === 1 || myRollOne[2] === 2 || myRollOne[2] === 3) {
+          //     console.log("automatic lose")
+          //           }
+          //         }
 
           }
           
