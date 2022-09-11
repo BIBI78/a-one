@@ -276,7 +276,7 @@ document.getElementsByTagName('img')[2].setAttribute("src",thirdDie);
 (myRollOne[2] === 1 || myRollOne[2] === 2 || myRollOne[2] === 3) && (myRollOne[2] !== myRollOne[0])){
   // console.log("automatic lose")
   const rollOneValue = myRollOne;
-console.log("automatic lose"+rollOneValue);
+console.log("automatic lose "+rollOneValue);
 
 
 
