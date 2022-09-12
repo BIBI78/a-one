@@ -1,5 +1,5 @@
 
-   
+   //** this is my original spin function. but i thnk theres is a better way to spin the image. i also want to add it to my roll function */
   function spin(){
     document.getElementById('img').className = 'spinImg'
     
@@ -7,6 +7,8 @@
     
      }
 
+     // here is where i create a consst to i can remove what the spin function does and then be able to do it again.
+     
      const snake = document.getElementById('img');
     
 
@@ -21,7 +23,10 @@
 
     snake.addEventListener('animationend', removeSpinClass);
      
-     
+     //
+
+     // this is the first rollDie fucntion , this gets a random number between 1-6 and switches the die image acordingly 
+
      function rollDie(){
         const firstNumber = Math.floor(Math.random()*6) + 1;
         const secondNumber = Math.floor(Math.random()*6) + 1;
@@ -44,7 +49,7 @@
         
       }
     
-    
+    // same as above but for palyer 2.
       function rollDieTwo() {
     
         const fourthNumber = Math.floor(Math.random()*6) + 1;
@@ -70,7 +75,7 @@
       }
 
       
-      
+      // i just added the the functions together here.
     
       function rollBoth(){
         const firstNumber = Math.floor(Math.random()*6) + 1;
@@ -105,15 +110,18 @@
     
       }
     
-     
+     // the sound is delayed  here, this is a mp3 file for the clicking sound , i want to replace this zith a dice roll sound.
         function play() {
           var audio = new Audio('https://www.fesliyanstudios.com/play-mp3/387');
           audio.play();
         }
+
+
+
 //  new js code for compare rolls 
 
 
-
+// this is my attempt at comparing the the two rolls, IT DOES NOT WORK
         function compareRolls (){
           const firstNumber = Math.floor(Math.random()*6) + 1;
           const secondNumber = Math.floor(Math.random()*6) + 1;
@@ -158,7 +166,7 @@
         }
 
 
-        function compare2(){
+        function compareRollsTwo(){
           const firstNumber = Math.floor(Math.random()*6) + 1;
           const secondNumber = Math.floor(Math.random()*6) + 1;
           const thirdNumber = Math.floor(Math.random()*6) + 1;
@@ -238,7 +246,7 @@ document.getElementsByTagName('img')[5].setAttribute("src",sixthDie);
 
       }
 
-function compare3 (){
+function compareRollsThree(){
 
           const firstNumber = Math.floor(Math.random()*6) + 1;
           const secondNumber = Math.floor(Math.random()*6) + 1;
@@ -377,7 +385,7 @@ if ((myRollTwo[0] === 1 || myRollTwo[0] === 2 || myRollTwo[0] === 3) && (myRollT
 console.log("automatic lose = "+rollTwoValue);
 
 
-// SSTOP
+// I WANT TO STOP HERE
 
 
               } else if ((myRollTwo[0] === 4 || myRollTwo[0] === 5 || myRollTwo[0] === 6) && (myRollTwo[0] !== myRollTwo[1]) && 
