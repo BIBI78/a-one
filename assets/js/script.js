@@ -428,7 +428,7 @@ function playerTwoRoll() {
   
   } else if ((myRollTwo[0] === myRollTwo[2])){
     const rollTwoValue = myRollTwo;
-    console.log("there are  two values the same  " + rollOneValue);
+    console.log("there are  two values the same  " + rollTwoValue);
     const compareValueOne = myRollTwo[1];
     console.log(compareValueTwo);
 
@@ -491,7 +491,7 @@ function playerOneRoll(){
 
   const myRollOne = [firstNumber, secondNumber, thirdNumber];
   console.log("first roll = " + myRollOne);
-  const compareValueOne = 0;
+  // const compareValueOne = 0;
  
 
 
@@ -728,6 +728,8 @@ if (compareValueOne === compareValueTwo){
     
 
 
+
+   
 function compareAttempt6(){
   const firstNumber = Math.floor(Math.random() * 6) + 1;
   const secondNumber = Math.floor(Math.random() * 6) + 1;
@@ -746,7 +748,7 @@ function compareAttempt6(){
 
   const myRollOne = [firstNumber, secondNumber, thirdNumber];
   
-  const compareValueOne = 0;
+  // const compareValueOne = 0;
  
 
   if ((myRollOne[0] === 1 || myRollOne[0] === 2 || myRollOne[0] === 3) && (myRollOne[0] !== myRollOne[1]) &&
@@ -779,7 +781,7 @@ function compareAttempt6(){
       const rollOneValue = myRollOne;
       
       const compareValueOne = myRollOne[2];
-      console.log("fourht conditon"+compareValueOne);
+      console.log("fourth conditon"+compareValueOne);
       
     } else if ((myRollOne[1] === myRollOne[2])) {
       const rollOneValue = myRollOne;
@@ -792,15 +794,15 @@ function compareAttempt6(){
       const compareValueOne = myRollOne[1];
       console.log("sixth conditon"+compareValueOne);
 
-      // anything else should say ROLL AGAIN
+      
     } else {
       
       const compareValueOne = 999;
       console.log("seventh conditon"+compareValueOne);
-      // now i need a actuall compare function.
+      
  
 
-  }
+    }
 
 
   const fourthNumber = Math.floor(Math.random() * 6) + 1;
@@ -816,8 +818,7 @@ function compareAttempt6(){
   document.getElementsByTagName('img')[5].setAttribute("src", sixthDie);
 
   const myRollTwo = [fourthNumber, fifthNumber, sixthNumber];
-  
-  const compareValueTwo = 0;
+  // const compareValueTwo = 0;
 
   if ((myRollTwo[0] === 1 || myRollTwo[0] === 2 || myRollTwo[0] === 3) && (myRollTwo[0] !== myRollTwo[1]) &&
     (myRollTwo[1] === 1 || myRollTwo[1] === 2 || myRollTwo[1] === 3) && (myRollTwo[1] !== myRollTwo[2]) &&
@@ -826,11 +827,8 @@ function compareAttempt6(){
     const rollTwoValue = myRollTwo;
   
     const compareValueTwo = 0;
-    console.log("same shit p2: " + compareValueTwo);
+    console.log("1, p2: " + compareValueTwo);
 
-
-
-   
 
 
   } else if ((myRollTwo[0] === 4 || myRollTwo[0] === 5 || myRollTwo[0] === 6) && (myRollTwo[0] !== myRollTwo[1]) &&
@@ -838,46 +836,44 @@ function compareAttempt6(){
     (myRollTwo[2] === 4 || myRollTwo[2] === 5 || myRollTwo[2] === 6) && (myRollTwo[2] !== myRollTwo[0])) {
     
     const compareValueTwo = 100;
-    console.log("same shit p2: " + compareValueTwo);
+    console.log("2, p2: " + compareValueTwo);
   } else if (myRollTwo[0] === myRollTwo[1] && myRollTwo[1] === myRollTwo[2]) {
     
     const rollTwoValue = myRollTwo[0];
    
     const compareValueTwo = myRollTwo[0];
-    console.log("same shit p2: " + compareValueTwo);
+    console.log("3,  p2: " + compareValueTwo);
 
   }else if (myRollTwo[0] === myRollTwo[1]){ 
 
     const rollTwoValue = myRollTwo;
     
     const compareValueTwo = myRollTwo[2];
-    console.log("same shit p2: " + compareValueTwo);
+    console.log("4, p2: " + compareValueTwo);
     
   } else if ((myRollTwo[1] === myRollTwo[2])) {
     const rollTwoValue = myRollTwo;
     
     const compareValueTwo = myRollTwo[0];
-    console.log("same shit p2: " + compareValueTwo);
+    console.log("5,  p2: " + compareValueTwo);
   
   } else if ((myRollTwo[0] === myRollTwo[2])){
     const rollTwoValue = myRollTwo;
    
     const compareValueTwo = myRollTwo[1];
-    console.log("same shit p2: " + compareValueTwo);
+    console.log("6, p2: " + compareValueTwo);
 
     
   } else {
-    console.log("roll again player 2")
+    console.log("7, p2" + compareValueTwo)
 
-    // now i need a actuall compare function.
 
-}
-/////
+  }
 
-if (compareValueOne === compareValueTwo){
-  compareValueOne === compareValueTwo
-  console.log("same roll , roll again")
-} else if (compareValueOne < compareValueTwo){
+
+
+
+if (compareValueOne < compareValueTwo){
   console.log("P2 wins")
   compareValueOne = 11;
 
@@ -885,7 +881,26 @@ if (compareValueOne === compareValueTwo){
   console.log("P1 wins")
   compareValueOne = 22;
 
+} else if (compareValueOne === compareValueTwo){
+  console.log("roll again")
+  console.log(compareValueOne +","+ compareValueTwo)
 }
-  
+  }
 
+
+
+  
+  let compareValueOne =0;
+  let compareValueTwo =0;
+  function compareRolls8() {
+    if (compareValueOne === compareValueTwo) {
+        if (compareValueOne ==! compareValueTwo) {
+            console.log("they are notnequal")
+        } else {
+            console.log("not equal")
+        }
+    }
 }
+
+
+
