@@ -141,7 +141,7 @@ function p1Roll(){
     (myRollOne[2] === 1 || myRollOne[2] === 2 || myRollOne[2] === 3) && (myRollOne[2] !== myRollOne[0])) {
 
     const rollOneValue = myRollOne;
-    const compareValueOne = 0;
+     compareValueOne = 0;
     console.log("first conditon "+compareValueOne);
 
 
@@ -149,14 +149,14 @@ function p1Roll(){
     (myRollOne[1] === 4 || myRollOne[1] === 5 || myRollOne[1] === 6) && (myRollOne[1] !== myRollOne[2]) &&
     (myRollOne[2] === 4 || myRollOne[2] === 5 || myRollOne[2] === 6) && (myRollOne[2] !== myRollOne[0])) {
    
-    const compareValueOne = 100;
+     compareValueOne = 100;
     console.log("second conditon "+compareValueOne);
 
   } else if (myRollOne[0] === myRollOne[1] && myRollOne[1] === myRollOne[2]) {
     
     const rollOneValue = myRollOne[0];
     
-    const compareValueOne = rollOneValue;
+    compareValueOne = rollOneValue;
     console.log("third conditon "+compareValueOne);
 
 
@@ -164,24 +164,24 @@ function p1Roll(){
 
       const rollOneValue = myRollOne;
       
-      const compareValueOne = myRollOne[2];
+      compareValueOne = myRollOne[2];
       console.log("fourht conditon "+compareValueOne);
       
     } else if ((myRollOne[1] === myRollOne[2])) {
       const rollOneValue = myRollOne;
-      const compareValueOne = myRollOne[0];
+      compareValueOne = myRollOne[0];
       console.log("fifth conditon "+compareValueOne);
     
     } else if ((myRollOne[0] === myRollOne[2])){
       const rollOneValue = myRollOne;
-      const compareValueOne = myRollOne[1];
+      compareValueOne = myRollOne[1];
       console.log("sixth conditon "+compareValueOne);
 
       
     } else {
      
-      const compareValueOne = 999;
-      console.log("seventh conditon "+compareValueOne);
+      compareValueOne = 999;
+      console.log("no roll//seventh conditon "+compareValueOne);
       
  
 
@@ -206,7 +206,7 @@ function p2Roll(){
    
     const rollTwoValue = myRollTwo;
     
-    const compareValueTwo = 0;
+    compareValueTwo = 0;
     
     console.log("first conditon "+compareValueTwo);
 
@@ -219,39 +219,39 @@ function p2Roll(){
     (myRollTwo[1] === 4 || myRollTwo[1] === 5 || myRollTwo[1] === 6) && (myRollTwo[1] !== myRollTwo[2]) &&
     (myRollTwo[2] === 4 || myRollTwo[2] === 5 || myRollTwo[2] === 6) && (myRollTwo[2] !== myRollTwo[0])) {
     
-    const compareValueTwo = 100;
+    compareValueTwo = 100;
     console.log("second conditon "+compareValueTwo);
 
 
   } else if (myRollTwo[0] === myRollTwo[1] && myRollTwo[1] === myRollTwo[2]) {
     
     const rollTwoValue = myRollTwo[0];
-    const compareValueTwo = myRollTwo[0];
+    compareValueTwo = myRollTwo[0];
     console.log("third conditon "+compareValueTwo);
 
   }else if (myRollTwo[0] === myRollTwo[1]){ 
 
     const rollTwoValue = myRollTwo;
-    const compareValueTwo = myRollTwo[2];
+   compareValueTwo = myRollTwo[2];
     console.log("fourth conditon "+compareValueTwo);
    
     
   } else if ((myRollTwo[1] === myRollTwo[2])) {
     const rollTwoValue = myRollTwo;
-    const compareValueTwo = myRollTwo[0];
+    compareValueTwo = myRollTwo[0];
     console.log("fifth conditon "+compareValueTwo);
    
   
   } else if ((myRollTwo[0] === myRollTwo[2])){
     const rollTwoValue = myRollTwo;
-    const compareValueTwo = myRollTwo[1];
+    compareValueTwo = myRollTwo[1];
     console.log("sicth conditon "+compareValueTwo);
     
 
     
   } else {
-    const compareValueTwo = 999;
-    console.log("second conditon "+compareValueTwo);
+    compareValueTwo = 999;
+    console.log("no role, seventh conditon "+compareValueTwo);
 
    
 }
@@ -260,17 +260,24 @@ function p2Roll(){
 
 
 
-
+// add the spin function and all the cosmetics later
 function kompare(){
 
-// let compareValueOne,compareValueTwo;
-  
     const firstNumber = Math.floor(Math.random() * 6) + 1;
     const secondNumber = Math.floor(Math.random() * 6) + 1;
     const thirdNumber = Math.floor(Math.random() * 6) + 1;
   
     const myRollOne = [firstNumber, secondNumber, thirdNumber];
-   console.log(compareValueOne)
+   console.log(compareValueOne);
+
+   const firstDie = "assets/images/d" + firstNumber + ".png";
+    const secondDie = "assets/images/d" + secondNumber + ".png";
+    const thirdDie = "assets/images/d" + thirdNumber + ".png";
+  
+  
+    document.getElementsByTagName('img')[0].setAttribute("src", firstDie);
+    document.getElementsByTagName('img')[1].setAttribute("src", secondDie);
+    document.getElementsByTagName('img')[2].setAttribute("src", thirdDie);
     
    
   
@@ -282,7 +289,7 @@ function kompare(){
   
       const rollOneValue = myRollOne;
       compareValueOne = 0;
-      console.log("first conditon "+compareValueOne);
+      console.log("I. automatic lose// first condition "+compareValueOne);
   
   
     } else if ((myRollOne[0] === 4 || myRollOne[0] === 5 || myRollOne[0] === 6) && (myRollOne[0] !== myRollOne[1]) &&
@@ -290,14 +297,14 @@ function kompare(){
       (myRollOne[2] === 4 || myRollOne[2] === 5 || myRollOne[2] === 6) && (myRollOne[2] !== myRollOne[0])) {
      
       compareValueOne = 100;
-      console.log("second conditon "+compareValueOne);
+      console.log("I. automatic win // second conditon "+compareValueOne);
   
     } else if (myRollOne[0] === myRollOne[1] && myRollOne[1] === myRollOne[2]) {
       
       const rollOneValue = myRollOne[0];
       
       compareValueOne = rollOneValue;
-      console.log("third conditon "+compareValueOne);
+      console.log("I.tripples //third conditon "+compareValueOne);
   
   
      } else if (myRollOne[0] === myRollOne[1]){ 
@@ -305,23 +312,23 @@ function kompare(){
         const rollOneValue = myRollOne;
         
         compareValueOne = myRollOne[2];
-        console.log("fourth conditon "+compareValueOne);
+        console.log("I. snake eyes//fourth conditon "+compareValueOne);
         
       } else if ((myRollOne[1] === myRollOne[2])) {
         const rollOneValue = myRollOne;
         compareValueOne = myRollOne[0];
-        console.log("fifth conditon "+compareValueOne);
+        console.log("I. snake eyes//fifth conditon "+compareValueOne);
       
       } else if ((myRollOne[0] === myRollOne[2])){
         const rollOneValue = myRollOne;
         compareValueOne = myRollOne[1];
-        console.log("sixth conditon "+compareValueOne);
+        console.log("I. snake eyes//sixth conditon "+compareValueOne);
   
         
       } else {
-       
+       /// palyer one should roll again , not rolling shit 
         compareValueOne = 999;
-        console.log("seventh conditon "+compareValueOne);
+        console.log("I technially no roll.seventh conditon "+compareValueOne);
         
    
   
@@ -432,6 +439,34 @@ function kompare(){
 }
 
 
+// copares after p1 and p2 have rolled 
+function compare(){
+
+  if (compareValueOne < compareValueTwo){
+    console.log("Player TWo Wins");
+    
+   } else if(compareValueOne > compareValueTwo) {
+    console.log("Player one Wins");
+  
+   }else if(compareValueOne ===100)  {
+    console.log("automatic win player 1");
+   } else if (compareValueOne === 0){
+    console.log("automatic lose player 1");
+  
+   } else if (compareValueTwo === 0){
+    console.log("automatic lose player 2")
+  
+    }  else if (compareValueTwo === 100){
+      console.log("automatic lose player 2")
+    } else if (compareValueOne === compareValueTwo){
+      console.log("equals , so roll again ")
+  
+    } else {
+      console.log("no idea what case this is")
+    }
+  
+
+}
 
 
 // function getRandomNumber(){
