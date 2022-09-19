@@ -16,14 +16,34 @@ function spin() {
 
 const snake = document.getElementById('img');
 
+const snake2 = document.getElementById('img2');
+const snake3 = document.getElementById('img3');
+
 
 function removeSpinClass() {
   snake.classList.remove('spinImg');
+
+
+
 }
 
 snake.addEventListener('animationend', removeSpinClass);
 
 
+
+
+
+
+
+
+
+
+//
+
+// this is the first rollDie fucntion , this gets a random number between 1-6 and switches the die image acordingly 
+
+
+// the sound is delayed  here, this is a mp3 file for the clicking sound , i want to replace this zith a dice roll sound.
 function play() {
   var audio = new Audio('https://www.fesliyanstudios.com/play-mp3/387');
   audio.play();
@@ -354,20 +374,9 @@ function kompare(){
   } else {
     console.log("no idea what case this is")
   }
-
-
-
-
-  // if (compareValueOne < compareValueTwo){
-  //   console.log("one < two")
-  // }else{
-  //   console.log("one > two ")
-  //   console.log(compareValueOne)
-  // }
 }
 
 
-// copares after p1 and p2 have rolled 
 function compare(){
 
   if (compareValueOne < compareValueTwo){
@@ -405,17 +414,19 @@ function rollSpin(){
   document.getElementById('d1').className = 'spinImg'
   document.getElementById('d2').className = 'spinImg'
   document.getElementById('d3').className = 'spinImg'
-  document.getElementById('d4').className = 'spinImg'
-  document.getElementById('d5').className = 'spinImg'
-  document.getElementById('d6').className = 'spinImg'
+
+//   document.getElementById('d4').className = 'spinImg'
+//   document.getElementById('d5').className = 'spinImg'
+//   document.getElementById('d6').className = 'spinImg'
 
 //  const snake = document.getElementById('img');
 const d1 = document.getElementById('d1');
 const d2 = document.getElementById('d2');
 const d3 = document.getElementById('d3');
-const d4 = document.getElementById('d4');
-const d5 = document.getElementById('d5');
-const d6 = document.getElementById('d6');
+
+// const d4 = document.getElementById('d4');
+// const d5 = document.getElementById('d5');
+// const d6 = document.getElementById('d6');
 
 
 function removeSpinClass() {
@@ -423,9 +434,10 @@ function removeSpinClass() {
   d1.classList.remove('spinImg');
   d2.classList.remove('spinImg');
   d3.classList.remove('spinImg');
-  d4.classList.remove('spinImg');
-  d5.classList.remove('spinImg');
-  d6.classList.remove('spinImg');
+
+//   d4.classList.remove('spinImg');
+//   d5.classList.remove('spinImg');
+//   d6.classList.remove('spinImg');
    
 
 }
@@ -434,20 +446,22 @@ function removeSpinClass() {
 d1.addEventListener('animationend', removeSpinClass);
 d2.addEventListener('animationend', removeSpinClass);
 d3.addEventListener('animationend', removeSpinClass);
-d4.addEventListener('animationend', removeSpinClass);
-d5.addEventListener('animationend', removeSpinClass);
-d6.addEventListener('animationend', removeSpinClass);
+
+// d4.addEventListener('animationend', removeSpinClass);
+// d5.addEventListener('animationend', removeSpinClass);
+// d6.addEventListener('animationend', removeSpinClass);
 
 
   const firstNumber = Math.floor(Math.random() * 6) + 1;
   const secondNumber = Math.floor(Math.random() * 6) + 1;
   const thirdNumber = Math.floor(Math.random() * 6) + 1;
-  const fourthNumber = Math.floor(Math.random() * 6) + 1;
-  const fifthNumber = Math.floor(Math.random() * 6) + 1;
-  const sixthNumber = Math.floor(Math.random() * 6) + 1;
+
+//   const fourthNumber = Math.floor(Math.random() * 6) + 1;
+//   const fifthNumber = Math.floor(Math.random() * 6) + 1;
+//   const sixthNumber = Math.floor(Math.random() * 6) + 1;
 
   const myRollOne = [firstNumber, secondNumber, thirdNumber];
-  const myRollTwo = [fourthNumber, fifthNumber, sixthNumber];
+//   const myRollTwo = [fourthNumber, fifthNumber, sixthNumber];
   
 
 
@@ -458,27 +472,26 @@ d6.addEventListener('animationend', removeSpinClass);
     const secondDie = "assets/images/d" + secondNumber + ".png";
     const thirdDie = "assets/images/d" + thirdNumber + ".png";
   
-    const fourthDie = "assets/images/d" + fourthNumber + ".png";
-    const fifthDie = "assets/images/d" + fifthNumber + ".png";
-    const sixthDie = "assets/images/d" + sixthNumber + ".png";
+    // const fourthDie = "assets/images/d" + fourthNumber + ".png";
+    // const fifthDie = "assets/images/d" + fifthNumber + ".png";
+    // const sixthDie = "assets/images/d" + sixthNumber + ".png";
   
     document.getElementsByTagName('img')[0].setAttribute("src", firstDie);
     document.getElementsByTagName('img')[1].setAttribute("src", secondDie);
     document.getElementsByTagName('img')[2].setAttribute("src", thirdDie);
-    document.getElementsByTagName('img')[3].setAttribute("src", fourthDie);
-    document.getElementsByTagName('img')[4].setAttribute("src", fifthDie);
-    document.getElementsByTagName('img')[5].setAttribute("src", sixthDie);
+
+    // document.getElementsByTagName('img')[3].setAttribute("src", fourthDie);
+    // document.getElementsByTagName('img')[4].setAttribute("src", fifthDie);
+    // document.getElementsByTagName('img')[5].setAttribute("src", sixthDie);
 
     document.getElementById('d1').setAttribute("src", firstDie);
     document.getElementById('d2').setAttribute("src", secondDie);
     document.getElementById('d3').setAttribute("src", thirdDie);
-    document.getElementById('d4').setAttribute("src", fourthDie);
-    document.getElementById('d5').setAttribute("src", fifthDie);
-    document.getElementById('d6').setAttribute("src", sixthDie);
+
+    // document.getElementById('d4').setAttribute("src", fourthDie);
+    // document.getElementById('d5').setAttribute("src", fifthDie);
+    // document.getElementById('d6').setAttribute("src", sixthDie);
 
 
    
 }
-
-
-
