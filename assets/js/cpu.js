@@ -481,13 +481,3 @@ function compare(){
 }
 
 
-// function getRandomNumber(){
-// return Math.floor(Math.random()*6)+1;
-// }
-// one = getRandomNumber();
-// two = getRandomNumber();
-
-// function compare ( numberOne, numberTwo) {
-// return numberOne === numberTwo ;
-// }
-// console.log (one, two, compare(one, two));
