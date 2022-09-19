@@ -456,10 +456,10 @@ function rollSpin(){
 function rollSpin2(){
   
   document.getElementById('img').className = 'spinImg'
-  document.getElementById('die1').className = 'spinImg'
+  document.getElementById('img4').className = 'spinImg'
 
  const snake = document.getElementById('img');
- snake4 = document.getElementById('die1');
+  const snake4 = document.getElementById('img4');
 
 
 function removeSpinClass() {
@@ -483,13 +483,12 @@ const firstNumber = Math.floor(Math.random() * 6) + 1;
     const secondDie = "assets/images/d" + secondNumber + ".png";
     const thirdDie = "assets/images/d" + thirdNumber + ".png";
   
-    snake4 = "assets/images/d" + firstNumber + ".png";
   
     document.getElementsByTagName('img')[0].setAttribute("src", firstDie);
     document.getElementsByTagName('img')[1].setAttribute("src", secondDie);
     document.getElementsByTagName('img')[2].setAttribute("src", thirdDie);
 
-    
+    document.getElementById('img4').setAttribute("src", firstDie);
 }
 
 
