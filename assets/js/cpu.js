@@ -417,88 +417,87 @@ function compare(){
 }
 
 
+
+
 function rollSpin(){
   
-    document.getElementById('img').className = 'spinImg'
-    document.getElementById('img2').className = 'spinImg'
-    document.getElementById('img3').className = 'spinImg'
-    document.getElementById('die1').className = 'spinImg'
-  
-  
+  // document.getElementById('img').className = 'spinImg'
+  document.getElementById('d1').className = 'spinImg'
+  document.getElementById('d2').className = 'spinImg'
+  document.getElementById('d3').className = 'spinImg'
+  document.getElementById('d4').className = 'spinImg'
+  document.getElementById('d5').className = 'spinImg'
+  document.getElementById('d6').className = 'spinImg'
 
-
-  const snake = document.getElementById('img');
-  const snake2 = document.getElementById('img2');
-  const snake3 = document.getElementById('img3');
-  const snake4 = document.getElementById('die1');
-  
-  
-  function removeSpinClass() {
-    snake.classList.remove('spinImg');
-    snake2.classList.remove('spinImg');
-    snake3.classList.remove('spinImg');
-    snake4.classList.remove('spinImg');
-     
-    const firstNumber = Math.floor(Math.random() * 6) + 1;
-  const firstDie = "assets/images/d" + firstNumber + ".png";
-  document.getElementsByTagName('die1')[0].setAttribute("src", firstDie);
-  
-  
-  }
-  
-  snake.addEventListener('animationend', removeSpinClass);
-  snake2.addEventListener('animationend', removeSpinClass);
-  snake3.addEventListener('animationend', removeSpinClass);
-  snake4.addEventListener('animationend', removeSpinClass);
-  
-}
-
-function rollSpin2(){
-  
-  document.getElementById('img').className = 'spinImg'
-  document.getElementById('img4').className = 'spinImg'
-  document.getElementById('img5').className = 'spinImg'
-  document.getElementById('img6').className = 'spinImg'
-
- const snake = document.getElementById('img');
-const snake4 = document.getElementById('img4');
-const snake5 = document.getElementById('img5');
-const snake6 = document.getElementById('img6');
+//  const snake = document.getElementById('img');
+const d1 = document.getElementById('d1');
+const d2 = document.getElementById('d2');
+const d3 = document.getElementById('d3');
+const d4 = document.getElementById('d4');
+const d5 = document.getElementById('d5');
+const d6 = document.getElementById('d6');
 
 
 function removeSpinClass() {
-  snake.classList.remove('spinImg');
-  snake4.classList.remove('spinImg');
-  snake5.classList.remove('spinImg');
-  snake6.classList.remove('spinImg');
+  // snake.classList.remove('spinImg');
+  d1.classList.remove('spinImg');
+  d2.classList.remove('spinImg');
+  d3.classList.remove('spinImg');
+  d4.classList.remove('spinImg');
+  d5.classList.remove('spinImg');
+  d6.classList.remove('spinImg');
    
 
 }
 
-snake.addEventListener('animationend', removeSpinClass);
-snake4.addEventListener('animationend', removeSpinClass);
-snake5.addEventListener('animationend', removeSpinClass);
-snake6.addEventListener('animationend', removeSpinClass);
+// snake.addEventListener('animationend', removeSpinClass); 
+d1.addEventListener('animationend', removeSpinClass);
+d2.addEventListener('animationend', removeSpinClass);
+d3.addEventListener('animationend', removeSpinClass);
+d4.addEventListener('animationend', removeSpinClass);
+d5.addEventListener('animationend', removeSpinClass);
+d6.addEventListener('animationend', removeSpinClass);
 
-const firstNumber = Math.floor(Math.random() * 6) + 1;
+
+  const firstNumber = Math.floor(Math.random() * 6) + 1;
   const secondNumber = Math.floor(Math.random() * 6) + 1;
   const thirdNumber = Math.floor(Math.random() * 6) + 1;
+  const fourthNumber = Math.floor(Math.random() * 6) + 1;
+  const fifthNumber = Math.floor(Math.random() * 6) + 1;
+  const sixthNumber = Math.floor(Math.random() * 6) + 1;
 
   const myRollOne = [firstNumber, secondNumber, thirdNumber];
- 
+  const myRollTwo = [fourthNumber, fifthNumber, sixthNumber];
   
-   const firstDie = "assets/images/d" + firstNumber + ".png";
+
+
+
+
+  
+    const firstDie = "assets/images/d" + firstNumber + ".png";
     const secondDie = "assets/images/d" + secondNumber + ".png";
     const thirdDie = "assets/images/d" + thirdNumber + ".png";
   
+    const fourthDie = "assets/images/d" + fourthNumber + ".png";
+    const fifthDie = "assets/images/d" + fifthNumber + ".png";
+    const sixthDie = "assets/images/d" + sixthNumber + ".png";
   
     document.getElementsByTagName('img')[0].setAttribute("src", firstDie);
     document.getElementsByTagName('img')[1].setAttribute("src", secondDie);
     document.getElementsByTagName('img')[2].setAttribute("src", thirdDie);
+    document.getElementsByTagName('img')[3].setAttribute("src", fourthDie);
+    document.getElementsByTagName('img')[4].setAttribute("src", fifthDie);
+    document.getElementsByTagName('img')[5].setAttribute("src", sixthDie);
 
-    document.getElementById('img4').setAttribute("src", firstDie);
-    document.getElementById('img5').setAttribute("src", secondDie);
-    document.getElementById('img6').setAttribute("src", thirdDie);
+    document.getElementById('d1').setAttribute("src", firstDie);
+    document.getElementById('d2').setAttribute("src", secondDie);
+    document.getElementById('d3').setAttribute("src", thirdDie);
+    document.getElementById('d4').setAttribute("src", fourthDie);
+    document.getElementById('d5').setAttribute("src", fifthDie);
+    document.getElementById('d6').setAttribute("src", sixthDie);
+
+
+   
 }
 
 
