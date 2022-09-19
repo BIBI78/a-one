@@ -479,15 +479,17 @@ const firstNumber = Math.floor(Math.random() * 6) + 1;
   const myRollOne = [firstNumber, secondNumber, thirdNumber];
  
   
-  const firstDie = "assets/images/d" + firstNumber + ".png";
+   const firstDie = "assets/images/d" + firstNumber + ".png";
     const secondDie = "assets/images/d" + secondNumber + ".png";
     const thirdDie = "assets/images/d" + thirdNumber + ".png";
   
+    snake4 = "assets/images/d" + firstNumber + ".png";
   
     document.getElementsByTagName('img')[0].setAttribute("src", firstDie);
     document.getElementsByTagName('img')[1].setAttribute("src", secondDie);
     document.getElementsByTagName('img')[2].setAttribute("src", thirdDie);
 
+    
 }
 
 
