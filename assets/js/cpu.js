@@ -457,20 +457,28 @@ function rollSpin2(){
   
   document.getElementById('img').className = 'spinImg'
   document.getElementById('img4').className = 'spinImg'
+  document.getElementById('img5').className = 'spinImg'
+  document.getElementById('img6').className = 'spinImg'
 
  const snake = document.getElementById('img');
-  const snake4 = document.getElementById('img4');
+const snake4 = document.getElementById('img4');
+const snake5 = document.getElementById('img5');
+const snake6 = document.getElementById('img6');
 
 
 function removeSpinClass() {
   snake.classList.remove('spinImg');
   snake4.classList.remove('spinImg');
+  snake5.classList.remove('spinImg');
+  snake6.classList.remove('spinImg');
    
 
 }
 
 snake.addEventListener('animationend', removeSpinClass);
 snake4.addEventListener('animationend', removeSpinClass);
+snake5.addEventListener('animationend', removeSpinClass);
+snake6.addEventListener('animationend', removeSpinClass);
 
 const firstNumber = Math.floor(Math.random() * 6) + 1;
   const secondNumber = Math.floor(Math.random() * 6) + 1;
@@ -489,6 +497,8 @@ const firstNumber = Math.floor(Math.random() * 6) + 1;
     document.getElementsByTagName('img')[2].setAttribute("src", thirdDie);
 
     document.getElementById('img4').setAttribute("src", firstDie);
+    document.getElementById('img5').setAttribute("src", secondDie);
+    document.getElementById('img6').setAttribute("src", thirdDie);
 }
 
 
