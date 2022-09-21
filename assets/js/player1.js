@@ -12,12 +12,15 @@ function spin() {
 
 }
 
+
+
+
 // here is where i create a consst to i can remove what the spin function does and then be able to do it again.
 
-const snake = document.getElementById('img');
+// const snake = document.getElementById('img');
 
-const snake2 = document.getElementById('img2');
-const snake3 = document.getElementById('img3');
+// const snake2 = document.getElementById('img2');
+// const snake3 = document.getElementById('img3');
 
 
 function removeSpinClass() {
@@ -27,7 +30,7 @@ function removeSpinClass() {
 
 }
 
-snake.addEventListener('animationend', removeSpinClass);
+// snake.addEventListener('animationend', removeSpinClass);
 
 
 
@@ -495,3 +498,10 @@ d3.addEventListener('animationend', removeSpinClass);
 
    
 }
+
+const buttonn = document.getElementById("btn")
+
+buttonn.addEventListener("click", function(){
+  console.log("yooo")
+  rollSpin()
+} )
