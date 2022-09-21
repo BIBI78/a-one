@@ -1143,8 +1143,39 @@ function kompareLoop(){
   const myRollOne = [firstNumber, secondNumber, thirdNumber];
   const myRollTwo = [fourthNumber, fifthNumber, sixthNumber];
   
+  document.getElementById('d1').className = 'spinImg'
+  document.getElementById('d2').className = 'spinImg'
+  document.getElementById('d3').className = 'spinImg'
+  document.getElementById('d4').className = 'spinImg'
+  document.getElementById('d5').className = 'spinImg'
+  document.getElementById('d6').className = 'spinImg'
 
 
+const d1 = document.getElementById('d1');
+const d2 = document.getElementById('d2');
+const d3 = document.getElementById('d3');
+const d4 = document.getElementById('d4');
+const d5 = document.getElementById('d5');
+const d6 = document.getElementById('d6');
+
+function removeSpinClass() {
+ 
+  d1.classList.remove('spinImg');
+  d2.classList.remove('spinImg');
+  d3.classList.remove('spinImg');
+  d4.classList.remove('spinImg');
+  d5.classList.remove('spinImg');
+  d6.classList.remove('spinImg');
+   
+
+}
+
+d1.addEventListener('animationend', removeSpinClass);
+d2.addEventListener('animationend', removeSpinClass);
+d3.addEventListener('animationend', removeSpinClass);
+d4.addEventListener('animationend', removeSpinClass);
+d5.addEventListener('animationend', removeSpinClass);
+d6.addEventListener('animationend', removeSpinClass);
 
   
     
