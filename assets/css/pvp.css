@@ -41,6 +41,15 @@
     h1 {
       margin: 0;
     }
+
+
+    #bob{
+      color: rgb(192, 192, 192);
+      text-shadow: 2px 2px 0 rgb(192, 11, 126);
+
+    }
+
+  
     
     .splash-screen {
       width: 100vw;

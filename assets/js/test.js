@@ -701,7 +701,7 @@ console.log("no idea what case this is")
 
 
 
-function rollSpinKompareLoop(){
+function rollSpinKompareLoopDisplay(){
 
 
     document.getElementById('d1').className = 'spinImg'
@@ -888,6 +888,7 @@ function rollSpinKompareLoop(){
   if (compareValueOne < compareValueTwo){
   console.log("Player Two Wins");
   document.querySelector('h1').innerHTML = 'Player Two Wins'
+  // document.getElementsByClassName('winner').innerHTML = 'TEST 4pf'
   
   } else if(compareValueOne > compareValueTwo) {
   console.log("Player One Wins");
@@ -927,7 +928,10 @@ function rollSpinKompareLoop(){
   
     
   
-  
+  // do this later , the "score" should  go blank when i roll.
+  function removeH1(){
+
+  }
   
   
   
