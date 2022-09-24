@@ -1,0 +1,155 @@
+:root {
+    --gradient: linear-gradient(90deg,
+    #39FF14,
+    #88FF0C,
+    #B0FF08,
+    #D7FF04,
+    #FFFF00);
+  
+  }
+
+
+  body {
+    color: white;
+    background-color: black;
+    font-family: "Press Start 2P", monospace;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+
+
+/*       
+  body:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: repeating-linear-gradient(#0D122B, #0D122B 2px, #565B73 2px, #565B73 4px);
+    opacity: 0.2;
+    z-index: 100;
+    content: "";
+    pointer-events: none;
+  } */
+
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+
+  h1 {
+    margin: 0;
+  }
+
+
+/* 
+  .splash-screen {
+    width: 100vw;
+    height: 100vh;
+  } */
+
+
+  @keyframes bg-animation {
+    0% {background-position: left;}
+    100% {background-position: right;}
+  }
+  .title {
+    margin: auto;
+    font-family: "Permanent Marker", monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40vh;
+    font-size: 2rem;
+    line-height: 0.75;
+    word-break: break-word;
+    max-width: 500px;
+
+
+  }
+
+
+  .title h1 {
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent; 
+
+   background-image: var(--gradient); 
+   -webkit-background-clip: text;
+   background-size: 400%;
+   animation: bg-animation .25s infinite alternate;
+ }
+
+
+
+ .slatt {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+ 
+    background-image: linear-gradient(#ff14bc, #fff70c,  #084eff); 
+    -webkit-background-clip: text;
+    background-size: 100%;
+    /* animation: bg-animation .25s infinite alternate; */
+  }
+
+ /* not mine */
+ .title-top {
+    transform: skew(-10deg) rotate(-10deg) translateX(-2rem);
+  }
+  .title-bottom {
+    transform: skew(-10deg) rotate(-10deg) translateX(1rem);
+  }
+
+/* game options , player 1 , cpu , etc.. */
+  .options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    margin: auto;
+  }
+
+
+  .options a {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+/* 
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+  } */
+
+  
+  .credit{
+    margin-top: 10px;
+    pointer-events: none;
+
+    color:  rgb(232, 16, 240);
+    text-shadow: 2px 2px 0  rgb(116, 122, 117)
+
+    /* color: transparent;
+   background: linear-gradient(90deg,#ff14bc, #fff70c,  #084eff);   */
+
+
+  }
+
+  .green-colorway {
+    color:  rgb(44, 226, 24);
+    text-shadow: 2px 2px 0  rgb(116, 122, 117)
+  }
+
+  .yellow-with-darkyellow {
+    color: rgb(226, 179, 24);
+    text-shadow: 0 2px 0 rgb(107, 77, 11), 2px 0 0 rgb(151, 109, 19),
+      2px 2px 0 rgb(151, 109, 19);
+  }
+
