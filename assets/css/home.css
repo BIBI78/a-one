@@ -193,3 +193,39 @@
       transform: skew(-10deg) rotate(-10deg) translateX(3rem);
     }
   }
+
+/* change  */
+  @media (min-width: 800px) {
+    .credit {
+      position: absolute;
+      right: 50px;
+      margin-top: 0;
+    }
+  }
+
+
+  /* Stole this idea from twilioquest, it's freaking sick. */
+  .load {
+    animation: load 800ms 500ms backwards;
+  }
+  
+  @keyframes load {
+    0% {
+      filter: blur(2px) hue-rotate(-150deg);
+    }
+  }
+  
+  ::selection {
+    background: #b4fdff;
+  }
+  
+  ::-moz-selection {
+    background: #da0a0a;
+  }
+
+/* new style sheet bits */
+.dieImage{
+  height: 3rem;
+  width: 6%;
+
+}
