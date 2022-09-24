@@ -159,6 +159,8 @@
     font-size: 6rem;
   }
   
+
+  /* edit this  */
   @media (min-width: 400px) {
     body {
       font-size: 1.2rem;
@@ -179,7 +181,7 @@
       height: 50vh;
     }
   
-    .buttons {
+    .options {
       height: 40vh;
     }
   
