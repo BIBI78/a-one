@@ -268,12 +268,11 @@ console.log("no idea what case this is")
 }
 
 
-const buttonn = document.getElementById("btn")
+// const buttonn = document.getElementById("btn")
 
-buttonn.addEventListener("click", function(){
-
-  rollSpinKompareLoop()
-} )
+// buttonn.addEventListener("click", function(){
+//   rollSpinKompareLoop()
+// } )
 
 
 
